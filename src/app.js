@@ -13,5 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const instrumentDataModel = new InstrumentFamilies(instrumentData);
   instrumentDataModel.bindEvents();
 
-  const infoSec = document.querySelector('sec')
+  const infoSec = document.querySelector('section.instrument-info');
+  const instrumentInfo = new InstrumentInfoView(infoSec);
+  instrumentInfo.bindEvents();
 });
